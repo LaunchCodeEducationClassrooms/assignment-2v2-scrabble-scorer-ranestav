@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@replit/database": "^2.0.0",
     "jasmine": "^3.6.3",
     "readline-sync": "^1.4.10"
   },

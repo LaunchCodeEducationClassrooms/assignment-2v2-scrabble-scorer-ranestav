@@ -1,6 +1,17 @@
 // inspired by https://exercism.io/tracks/javascript/exercises/etl/solutions/91f99a3cca9548cebe5975d7ebca6a85
-
+const Database = require("@replit/database")
 const input = require("readline-sync");
+const db = new Database()
+db.set("key", "value").then(() => {});
+db.get("key").then(value => {});
+db.delete("key").then(() => {});
+db.list().then(keys => {});
+db.list("prefix").then(matches => {});
+
+
+
+
+
 
 const oldPointStructure = {
   1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
