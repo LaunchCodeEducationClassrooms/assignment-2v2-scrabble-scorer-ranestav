@@ -95,13 +95,13 @@ function scorerPrompt() {
 }
 
 function transform(obj) {
-  let newPointStructure = {};
+  let newPointStructureObj = {};
   for (item in obj) {
     for (let i = 0; i < obj[item].length; i++) {
-      newPointStructure[obj[item][i].toLowerCase()] = Number(item);
+      newPointStructureObj[obj[item][i].toLowerCase()] = Number(item);
     }
   }
-  return newPointStructure;
+  return newPointStructureObj;
 };
 let newPointStructure = transform(oldPointStructure);
 
@@ -109,7 +109,7 @@ function runProgram() {
    initialPrompt();
    scorerPrompt();
 }
-runProgram();
+//runProgram();
 // Don't write any code below this line 
 // And don't change these or your program will not run as expected //
 module.exports = {
