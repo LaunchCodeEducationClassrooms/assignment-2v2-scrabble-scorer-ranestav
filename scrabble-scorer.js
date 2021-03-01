@@ -57,7 +57,6 @@ let vowelBonusScore = function(word) {
   }
   return score;
 };
-//console.log(vowelBonusScore(initialPrompt()));
 let scrabbleScore = function(word){
 	word = word.toLowerCase();
 	let letterPoints = 0;
